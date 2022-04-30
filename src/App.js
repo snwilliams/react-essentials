@@ -12,7 +12,11 @@ function Main (props) {
   return (
     <section>
       <p>We serve the most delicious food around</p>
-      <img src={leif} height={200} alt="a Great Pyrenees stands in a snowy yard"/>
+      <img 
+        src={leif} 
+        height={200} 
+        alt="a Great Pyrenees stands in a snowy yard"
+      />
       <ul style={{textAlign: "left"}}>
         {props.dishes.map((dish)=> (
           <li key={dish.id}>{dish.title}</li>
