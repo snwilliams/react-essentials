@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.css';
 
-function Header () {
+function Header (props) {
+  console.log(props);
   return (
-    <h1>Sara Williams</h1>
+    <h1>{props.name}'s Kitchen</h1>
   );
 }
 
@@ -13,18 +14,18 @@ function Main () {
   );
 }
 
-function Footer () {
+function Footer (props) {
   return(
-    <h3>sara.williams.n@gmail.com  |  (970) 412-4699  |  GitHub</h3>
+    <h3>Copyright {props.year}  |  sara.williams.n@gmail.com  |  (970) 412-4699  |  GitHub</h3>
   );
 }
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Header name="Sara"/>
       <Main />
-      <Footer />
+      <Footer year={new Date().getFullYear()}/>
     </div>
   );
 }
