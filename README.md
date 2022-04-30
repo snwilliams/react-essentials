@@ -5,7 +5,7 @@ This project will cover lessons learned in the "React Essentials" course, taught
 
 ## Topics Covered
 | Topic                   | Date Completed |
-|------------------------------------------|
+|-------------------------|----------------|
 | What is React?          | 4/30/2022      |
 | Intro to React Elements | 4/30/2022      |
 | React Components        | 4/30/2022      |
