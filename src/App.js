@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import leif from "./leif.jpg";
+//import leif from "./leif.jpg";
 
-function Header (props) {
+/*function Header (props) {
   return (
     <h1>{props.name}'s Kitchen</h1>
   );
@@ -42,18 +42,27 @@ const dishes = [
 ];
 
 //Transform array into object that has dishes in it, with each one having a key
-const dishObject = dishes.map((dish, i) => ({id: i, title: dish}));
+const dishObject = dishes.map((dish, i) => ({id: i, title: dish}));*/
 
-
-
-function App() {
+function SecretComponent() {
   return (
-    <div className="App">
-      <Header name="Sara"/>
-      <Main dishes={dishObject}/>
-      <Footer year={new Date().getFullYear()}/>
-    </div>
-  );
+    <h1>Secret information for authorized users only</h1>
+  )
+}
+
+function RegularComponent() {
+  return (
+    <h1>Everyone can see this component.</h1>
+  )
+}
+
+
+function App(props) {
+  return (
+    <>
+      {props.authorized ? <SecretComponent /> : <RegularComponent /> }
+    </>
+  )
 }
 
 export default App;
