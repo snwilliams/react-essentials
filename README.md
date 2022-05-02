@@ -9,4 +9,5 @@ This project will cover lessons learned in the "React Essentials" course, taught
 | What is React?          | 4/30/2022      |
 | Intro to React Elements | 4/30/2022      |
 | React Components        | 4/30/2022      |
+| React State in the Component Tree | 5/1/2022 |
 
