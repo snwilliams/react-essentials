@@ -11,4 +11,5 @@ This project will cover lessons learned in the "React Essentials" course, taught
 | React Components        | 4/30/2022      |
 | React State in the Component Tree | 5/1/2022 |
 | Asynchronous React | 5/3/2022 |
+| React Testing | 5/3/2022 |
 
